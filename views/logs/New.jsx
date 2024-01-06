@@ -4,6 +4,7 @@ function New(props) {
     return (
         <div>
             <h1>New Log Page</h1>
+            <a href="/logs">Back to Logs Index Page</a>
             <form action="/logs" method="POST">
                 Title: <input type="text" name="title" placeholder="Title" /> <br/>
                 Entry: <input type="text" name="entry" placeholder="Entry" /> <br/>
@@ -13,3 +14,5 @@ function New(props) {
         </div>
     )
 }
+
+module.exports = New
